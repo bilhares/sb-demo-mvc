@@ -7,7 +7,7 @@
 	<nav class="sidebar sidebar-open" th:fragment="nav-sidebar">
 		<ul class="nav nav-pills">
 			<li class="nav-item">
-				<a class="nav-link " href="/">
+				<a class="nav-link " th:href="@{/}">
 					<i class="oi oi-home"></i>
 					<span th:text="#{sidebar.link.home}">Home</span>
 				</a>
@@ -19,13 +19,13 @@
 				<span class="nav-link active" >Departamentos</span>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/departamentos/cadastrar">
+				<a class="nav-link" th:href="@{/departamentos/cadastrar}">
 					<i class="oi oi-plus"></i>
 					<span th:text="#{sidebar.link.cadastrar}">Cadastrar</span>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/departamentos/listar">
+				<a class="nav-link" th:href="@{/departamentos/listar}">
 					<i class="oi oi-spreadsheet"></i>
 					<span th:text="#{sidebar.link.listar}">Listar </span>
 				</a>
@@ -37,13 +37,13 @@
 				<span class="nav-link active">Cargos</span>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/cargos/cadastrar">
+				<a class="nav-link" th:href="@{/cargos/cadastrar}">
 					<i class="oi oi-plus"></i>
 					<span th:text="#{sidebar.link.cadastrar}">Cadastrar </span>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/cargos/listar">
+				<a class="nav-link" th:href="@{/cargos/listar}">
 					<i class="oi oi-spreadsheet"></i>
 					<span th:text="#{sidebar.link.listar}">Listar </span>
 				</a>
@@ -55,13 +55,13 @@
 				<span class="nav-link active">Funcionários</span>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/funcionarios/cadastrar">
+				<a class="nav-link" th:href="@{/funcionarios/cadastrar}">
 					<i class="oi oi-plus"></i>
 					<span th:text="#{sidebar.link.cadastrar}">Cadastrar </span>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/funcionarios/listar">
+				<a class="nav-link" th:href="@{/funcionarios/listar}">
 					<i class="oi oi-spreadsheet"></i>
 					<span th:text="#{sidebar.link.listar}">Listar </span>
 				</a>
