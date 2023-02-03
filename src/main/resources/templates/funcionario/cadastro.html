@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="container" id="cadastro">
-			<div th:replace="fragments/alert"></div>
+			<div th:replace="~{fragments/alert}"></div>
 			<form th:action="${funcionario.id == null} ? @{/funcionarios/salvar} : @{/funcionarios/editar}" th:object="${funcionario}" method="POST">
 				<div class="form-row">
 					<div class="form-group col-md-6">

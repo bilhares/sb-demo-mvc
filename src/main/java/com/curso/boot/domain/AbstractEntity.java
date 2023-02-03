@@ -2,7 +2,7 @@ package com.curso.boot.domain;
 
 import java.io.Serializable;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @MappedSuperclass
 public abstract class AbstractEntity<ID extends Serializable> implements Serializable {

@@ -3,7 +3,7 @@ package com.curso.boot.web.controller;
 import java.time.LocalDate;
 import java.util.List;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
